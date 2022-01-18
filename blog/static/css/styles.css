@@ -11,3 +11,26 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+.navbar {
+  background-color: rgb(65, 36, 139)
+}
+
+.card {
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+}
+
+#footer {
+  background-color: #e2e1e1;
+}
+
+#avatar {
+  width: 72px;
+  border-width: 4px;
+  border-radius: 6px;
+  border: grey thin solid;
+}
+
+
+
+
