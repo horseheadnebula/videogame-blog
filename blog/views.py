@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from users.models import CustomUser
+
 from .models import Post
 
 def frontpage(request):
@@ -8,4 +10,6 @@ def frontpage(request):
     return render(request, 'blog/frontpage.html', {'posts': posts})
 
 def userpage(request):
-    return render(request, 'blog/userpage.html')
+    user = CustomUser.objects.all()
+
+    return render(request, 'blog/userpage.html', {'user': user})

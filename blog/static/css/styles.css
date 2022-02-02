@@ -12,7 +12,10 @@ body {
 }
 
 .navbar {
-  background-color: rgb(65, 36, 139)
+  background: linear-gradient(to top, #853ab1 0%, #5a0294 100%);}
+
+.modal-header {
+  background: linear-gradient(to top, #853ab1 0%, #5a0294 100%);
 }
 
 .card {
@@ -24,12 +27,21 @@ body {
   background-color: #e2e1e1;
 }
 
+#usercard {
+  background-color:aliceblue;
+  border-radius: 5px;
+  width: 700pt;
+}
+
 #avatar {
+  height: 72px;
   width: 72px;
   border-width: 4px;
   border-radius: 6px;
+  background-color:antiquewhite;
   border: grey thin solid;
 }
+
 
 
 
