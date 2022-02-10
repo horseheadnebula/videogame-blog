@@ -12,7 +12,7 @@
 <!--Navigation bar-->    
     <nav class="navbar navbar-dark d-flex">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">
+            <a href="/ " class="navbar-brand">
                 <img src="../../static/img/arcade-machine.png" alt="Logo" style="width: 55px;">
                 Game Machine
             </a>
@@ -21,10 +21,10 @@
                 <button type="submit" class="btn text-white border"><img src="https://cdn1.iconfinder.com/data/icons/jumpicon-basic-ui-glyph-1/32/-_Magnifier-Search-Zoom--256.png" alt="search icon" style="width: 30px;"></button>
             </form>
             <ul class="nav d-flex">
-                <li class="me-1"><a href="#" class="btn text-white border">Sign In</a></li>
+                <li class="me-1"><a href="{% url 'regpage' %}" class="btn text-white">Регистрация</a></li>
                 <li>
                     
-                    <button type="button" class="btn border-white text-white" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+                    <button type="button" class="btn bg-light rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</button>
 
                     <!-- The Modal -->
                     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -40,6 +40,7 @@
                                 <!-- Modal body -->
                                 <div class="modal-body">
                                     
+
                                     <form>
                                         <div class="mb-3">
                                             <label for="exampleInputEmail1" class="form-label">Электронная почта</label>
@@ -76,13 +77,14 @@
         <div class="row" id="footer">
             <footer class="d-flex justify-content-between py-4">
                 <span class="ms-5 text-muted">
-                    <img src="https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png" alt="github logo" style="width: 40px;">
-                    github.com/horseheadnebula
+                    <a href="https://github.com/horseheadnebula"><img src="https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png" alt="github logo" style="width: 40px;">
+                        github.com/horseheadnebula</a>
+                    
                 </span>
                 <ul class="nav me-5 justify-content-end d-flex">
-                    <li class="me-1"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/vk_black_logo_icon_147058.png" alt="vk" style="width: 35px;"></li>
-                    <li class="me-1"><img src="https://cdn.icon-icons.com/icons2/2954/PNG/512/telegram_icon_184639.png" alt="telegram" style="width: 35px;"></li>
-                    <li><img src="https://cdn.icon-icons.com/icons2/1/PNG/256/sociallinkedin_member_70.png" alt="linkedin" style="width: 35px;"></li>
+                    <li class="me-1"><a href="https://vk.com/horseheadnebula"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/vk_black_logo_icon_147058.png" alt="vk" style="width: 35px;"></a></li>
+                    <li class="me-1"><a href="https://t.me/horseheadnebula"><img src="https://cdn.icon-icons.com/icons2/2954/PNG/512/telegram_icon_184639.png" alt="telegram" style="width: 35px;"></a></li>
+                    <li><a href="https://www.linkedin.com/in/dmitriy-stsheletskiy/"><img src="https://cdn.icon-icons.com/icons2/1/PNG/256/sociallinkedin_member_70.png" alt="linkedin" style="width: 35px;"></a></li>
                 </ul>
             </footer>
         </div>

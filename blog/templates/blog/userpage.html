@@ -1,31 +1,35 @@
 {% extends 'blog/base.html' %}
 
+{% block title %}
+Профиль пользователя
+{% endblock %}
+
 {% block content %}
 <div class="container my-2" id="usercard">
     <div class="row">
-        <div class="container m-3 px-0" id="avatar"></div>
-        <div class="container" id="userinfo">
-            <ul class="list-group">
-                <li>
-                    <h5>Никнейм:</h5>
+        <div class="container mx-4 my-3 px-0" id="avatar"></div>
+        <div class="container px-2" id="userinfo">
+            <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item">
+                    <h5>Никнейм</h5>
                 </li>
-                <li>
-                    <h5>Имя:</h5>
+                <li class="list-group-item">
+                    <h5>Имя</h5>
                 </li>
-                <li>
-                    <h5>Фамилия:</h5>
+                <li class="list-group-item">
+                    <h5>Фамилия</h5>
                 </li>
-                <li>
-                    <h5>Отчество:</h5>
+                <li class="list-group-item">
+                    <h5>Отчество</h5>
                 </li>
-                <li>
-                    <h5>Пол:</h5>
+                <li class="list-group-item">
+                    <h5>Пол</h5>
                 </li>
-                <li>
-                    <h5>Дата Рождения:</h5>
+                <li class="list-group-item">
+                    <h5>Год рождения</h5>
                 </li>
-                <li>
-                    <h5>E-mail:</h5>
+                <li class="list-group-item">
+                    <h5>E-mail</h5>
                 </li>
             </ul>
         </div>

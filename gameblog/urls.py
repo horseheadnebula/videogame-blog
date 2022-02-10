@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from blog.views import frontpage, userpage
+from blog.views import frontpage, userpage, regpage, loginpage
 
 urlpatterns = [
     path('', frontpage, name='frontpage'),
     path('userpage/', userpage, name='userpage'),
+    path('login/', loginpage, name='loginpage'),
+    path('registration/', regpage, name='regpage'),
     path('admin/', admin.site.urls),
 ]

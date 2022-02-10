@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<div class="container my-3 bg-light rounded-3" style="width: 40rem;">
+    <div class="row">
+        <div class="container-fluid my-3">
+            <h3 class="text-center">Регистрация</h3>
+            <div class="form-group">   
+                <form action="{% url 'regpage' %}" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-secondary">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
