@@ -10,7 +10,7 @@
                 <form action="{% url 'regpage' %}" method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <button type="submit" class="btn btn-secondary">Регистрация</button>
+                    <input type="submit" class="btn btn-secondary"></input>
                 </form>
             </div>
         </div>
